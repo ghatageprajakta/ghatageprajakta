@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">📸 Photo Gallery</div>
+    <ul class="nav-links">
+      <li><a href="#section1">Nature</a></li>
+      <li><a href="#section2">Architecture</a></li>
+    </ul>
+  </nav>
+
+  <section class="search-filter">
+    <input type="text" id="searchInput" placeholder="Search by tag or category..." />
+    <div class="filter-buttons">
+      <button onclick="filterGallery('all')">All</button>
+      <button onclick="filterGallery('nature')">Nature</button>
+      <button onclick="filterGallery('architecture')">Architecture</button>
+    </div>
+  </section>
+
+  <section id="section1" class="gallery-section">
+    <h2>Nature</h2>
+    <div class="gallery">
+      <img src="istockphoto-517188688-1024x1024" class="gallery-item nature" alt="sunrise" />
+      <img src="https://source.unsplash.com/400x300/?mountain" class="gallery-item nature" alt="sunset" />
+      
+    </div>
+  </section>
+
+  <section id="section2" class="gallery-section">
+    <h2>Architecture</h2>
+    <div class="gallery">
+      <img src="pexels-pixabay-262367" class="gallery-item architecture" alt="building" />
+      <img src="360_F_72100355_wiTRvEE4PGMQPl37NUaEjHwSmY2kNZbA" class="gallery-item architecture" alt="city" />
+     
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
